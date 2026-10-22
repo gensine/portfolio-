@@ -525,7 +525,7 @@
   // ==========================================
   const githubCalendar = document.getElementById('github-calendar');
   if (githubCalendar) {
-    const totalWeeks = 48;
+    const totalWeeks = 52;
     const daysPerWeek = 7;
     const fragment = document.createDocumentFragment();
 

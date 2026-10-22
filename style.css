@@ -1204,6 +1204,8 @@ body {
 .calendar-matrix-wrapper {
   overflow-x: auto;
   padding-bottom: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .calendar-matrix {
@@ -1213,6 +1215,13 @@ body {
   grid-auto-columns: 10px;
   gap: 3px;
   width: max-content;
+  margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+  .calendar-matrix-wrapper {
+    justify-content: flex-start;
+  }
 }
 
 .calendar-cell {
