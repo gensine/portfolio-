@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Vaishnavi Mishra – AI Engineer & Systems Developer</title>
+  <meta name="description" content="AI Engineer specializing in RAG architectures, LLM inference, machine learning pipelines, and high-performance backends." />
+  <meta name="keywords" content="Vaishnavi Mishra, AI Engineer, Machine Learning, RAG, Ollama, Python, FastAPI, SRMIST, Portfolio" />
+  <meta name="author" content="Vaishnavi Mishra" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Vaishnavi Mishra – AI Engineer & Systems Developer" />
+  <meta property="og:description" content="AI Engineer specializing in RAG architectures, LLM inference, machine learning pipelines, and high-performance backends." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://github.com/gensine" />
+
+  <!-- Google Fonts: Inter / Geist style, JetBrains Mono, and Caveat for handwritten notes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <script>
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <!-- Brand / Monogram -->
+      <a href="#" class="brand-monogram" aria-label="Vaishnavi Mishra - Home">
+        <svg viewBox="0 0 120 40" fill="none" class="brand-svg" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2" />
+          <text x="10" y="26" font-family="JetBrains Mono" font-weight="700" font-size="16" fill="currentColor">VM</text>
+          <path d="M48 20h20m10 0h36" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" stroke-opacity="0.4"/>
+          <circle cx="73" cy="20" r="3" fill="var(--color-primary)"/>
+        </svg>
+      </a>
+
+      <div class="flex-spacer"></div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#stack" class="nav-link">Stack</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#publications" class="nav-link">Research</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Command Menu Trigger -->
+        <button id="cmd-palette-btn" class="cmd-trigger-btn" aria-label="Open command palette (Ctrl+K)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="cmd-text">Search...</span>
+          <span class="kbd-badge"><kbd>⌘</kbd><kbd>K</kbd></span>
+        </button>
+
+        <div class="header-divider"></div>
+
+        <!-- GitHub Profile with indicator -->
+        <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="icon-svg">
+            <path d="M12 0C5.37 0 0 5.372 0 11.997c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.77 3.633 17.4 3.633 17.4c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.624-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.792 24 17.293 24 11.997 24 5.372 18.627 0 12 0z"/>
+          </svg>
+        </a>
+
+        <div class="header-divider"></div>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="icon-btn theme-toggle" aria-label="Toggle dark/light mode">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Blueprint Layout -->
+  <main class="blueprint-main">
+    <div class="container layout-frame">
+
+      <!-- ================= HERO SECTION ================= -->
+      <section class="blueprint-panel hero-panel screen-line-bottom">
+        <div class="hero-grid">
+          
+          <!-- Avatar Column -->
+          <div class="hero-avatar-col">
+            <div class="avatar-wrapper">
+              <img src="assets/images/avatar-light.jpg" alt="Vaishnavi Mishra Avatar" class="avatar-img avatar-light" />
+              <img src="assets/images/avatar-dark.jpg" alt="Vaishnavi Mishra Avatar" class="avatar-img avatar-dark" />
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="avatar-meta">
+              <span class="status-pulse-dot"></span>
+              <span class="avatar-status-text">Available for AI / ML Roles</span>
+            </div>
+          </div>
+
+          <!-- Interactive Neural Canvas (Fig. 1) -->
+          <div class="hero-canvas-col">
+            <div class="canvas-container" id="canvas-container">
+              <canvas id="neural-canvas"></canvas>
+              <div class="canvas-overlay-ui">
+                <span class="canvas-tag">NEURAL TENSOR ENGINE</span>
+                <span class="canvas-metric" id="neural-metric">LOSS: 0.0142 | ACC: 98.7%</span>
+              </div>
+              <figcaption class="fig-caption">Fig. 1. Latent Tensor Visualizer</figcaption>
+              
+              <!-- Handwritten Note -->
+              <div class="handwritten-note note-canvas">
+                <svg class="handwritten-arrow" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M42 6C35 24 22 38 8 42M8 42L18 36M8 42L14 48"/>
+                </svg>
+                <span>follows your cursor<br>click for synaptic pulse</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Name & Title Row -->
+          <div class="hero-intro-row">
+            <div class="name-badge-group">
+              <h1 class="hero-name">Vaishnavi Mishra</h1>
+              <!-- Verified badge -->
+              <span class="verified-badge" title="Verified AI Engineer & Researcher">
+                <svg viewBox="0 0 24 24" class="icon-verified" fill="currentColor">
+                  <path d="M24 12a4.454 4.454 0 0 0-2.564-3.91 4.437 4.437 0 0 0-.948-4.578 4.436 4.436 0 0 0-4.577-.948A4.44 4.44 0 0 0 12 0a4.423 4.423 0 0 0-3.9 2.564 4.434 4.434 0 0 0-2.43-.178 4.425 4.425 0 0 0-2.158 1.126 4.42 4.42 0 0 0-1.12 2.156 4.42 4.42 0 0 0 .183 2.421A4.456 4.456 0 0 0 0 12a4.465 4.465 0 0 0 2.576 3.91 4.433 4.433 0 0 0 .936 4.577 4.459 4.459 0 0 0 4.577.95A4.454 4.454 0 0 0 12 24a4.439 4.439 0 0 0 3.91-2.563 4.26 4.26 0 0 0 5.526-5.526A4.453 4.453 0 0 0 24 12Zm-13.709 4.917-4.38-4.378 1.652-1.663 2.646 2.646L15.83 7.4l1.72 1.591-7.258 7.926Z"></path>
+                </svg>
+              </span>
+              <!-- Audio Pronunciation Button -->
+              <button id="pronounce-btn" class="audio-speak-btn" aria-label="Pronounce Vaishnavi Mishra" title="Listen to pronunciation">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-speaker">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Shimmering Tagline -->
+            <div class="hero-tagline-container">
+              <p class="hero-tagline font-mono shimmer">
+                Building intelligent RAG pipelines, fine-tuned models & resilient backends.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Diagonal Stripe Divider -->
+      <div class="stripe-divider"></div>
+
+      <!-- ================= SOCIAL & QUICK ACTIONS STRIP ================= -->
+      <section class="blueprint-panel social-panel screen-line-bottom">
+        <div class="social-wrapper">
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub /gensine">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.372 0 11.997c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.77 3.633 17.4 3.633 17.4c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.624-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.792 24 17.293 24 11.997 24 5.372 18.627 0 12 0z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/vaishnavi-mishra-386935296" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.274 0H1.728C.692 0 0 .685 0 1.715v20.569C0 23.316.864 24 1.727 24h20.546C23.31 24 24 23.315 24 22.285V1.716C24.001.684 23.31 0 22.274 0M7.08 20.4H3.454V8.915h3.625zM5.352 7.371c-1.209 0-2.07-.856-2.07-2.056s.863-2.059 2.07-2.059c1.21 0 2.073.859 2.073 2.059S6.388 7.37 5.352 7.37M20.548 20.4h-3.626v-5.485c0-1.371 0-3.087-1.9-3.087-1.898 0-2.073 1.372-2.073 2.916V20.4H9.325V8.915h3.454v1.541c.69-1.2 2.073-1.885 3.453-1.885 3.627 0 4.316 2.4 4.316 5.485z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <button id="copy-email-btn" class="social-btn" data-email="vm1985@srmist.edu.in" title="Copy email address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>vm1985@srmist.edu.in</span>
+              </button>
+            </li>
+            <li>
+              <a href="tel:+916386061984" class="social-btn" title="Call directly">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+91 6386061984</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Handwritten Note -->
+          <div class="handwritten-note note-social">
+            <span>let's collaborate</span>
+            <svg class="handwritten-arrow-reverse" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M34 4c1 15-5 26-21 30M13 34l9-3M13 34l7.5-8"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OVERVIEW / CURRENT METRICS ================= -->
+      <section class="blueprint-panel overview-panel screen-line-bottom">
+        <div class="overview-grid">
+          
+          <div class="overview-item">
+            <div class="icon-tile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+            </div>
+            <div class="overview-info">
+              <span class="overview-label">Current Role</span>
+              <p class="overview-value">Software Development Intern <span class="at-sym">@</span> <strong class="highlight-text">Sopra Steria</strong></p>
+            </div>
+          </div>
+
+          <div class="overview-item">
+            <div class="icon-tile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div class="overview-info">
+              <span class="overview-label">Education</span>
+              <p class="overview-value">B.Tech CSE Blockchain <span class="at-sym">@</span> <strong>SRMIST</strong> <span class="badge-cgpa">CGPA 8.9</span></p>
+            </div>
+          </div>
+
+          <div class="overview-item">
+            <div class="icon-tile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="overview-info">
+              <span class="overview-label">Location</span>
+              <p class="overview-value">Chennai, India <span class="text-subtle">• Sitapur, UP</span></p>
+            </div>
+          </div>
+
+          <div class="overview-item">
+            <div class="icon-tile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="overview-info">
+              <span class="overview-label">Local Time (IST)</span>
+              <p class="overview-value font-mono">
+                <span id="live-ist-clock">--:--:-- IST</span>
+                <span class="badge-timezone">GMT+5:30</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= GITHUB CONTRIBUTIONS HEATMAP (FIG. 2) ================= -->
+      <section class="blueprint-panel contributions-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-svg"><path d="M12 0C5.37 0 0 5.372 0 11.997c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.77 3.633 17.4 3.633 17.4c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.624-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.792 24 17.293 24 11.997 24 5.372 18.627 0 12 0z"/></svg>
+            <span class="section-title">GitHub Contributions</span>
+          </div>
+          <span class="panel-meta font-mono">@gensine • 742+ commits in 2026</span>
+        </div>
+        <div class="panel-body contributions-body">
+          <div class="calendar-matrix-wrapper">
+            <div id="github-calendar" class="calendar-matrix"></div>
+          </div>
+          <div class="calendar-footer font-mono">
+            <span class="fig-label">Fig. 2. Engineering Activity Matrix</span>
+            <div class="legend-scale">
+              <span>Less</span>
+              <span class="heat-box lvl-0"></span>
+              <span class="heat-box lvl-1"></span>
+              <span class="heat-box lvl-2"></span>
+              <span class="heat-box lvl-3"></span>
+              <span class="heat-box lvl-4"></span>
+              <span>More</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diagonal Stripe Divider -->
+      <div class="stripe-divider"></div>
+
+      <!-- ================= ABOUT / HELLO SECTION ================= -->
+      <section id="about" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">01</span>
+            <span class="section-title">About / Hello</span>
+          </div>
+          <span class="panel-meta">Engineering Philosophy</span>
+        </div>
+
+        <div class="panel-body about-body">
+          <p class="about-lead">
+            I am an <strong>AI Engineer & Full-Stack Systems Developer</strong> driven by building robust AI workflows, autonomous RAG pipelines, and resilient distributed architectures.
+          </p>
+          <p class="about-text">
+            My work bridges the gap between deep machine learning research and production backend engineering. Currently interned at <strong>Sopra Steria</strong>, I engineered a high-frequency Unified API Gateway Health Monitor using Python, FastAPI, and WebSockets. Concurrently, I develop agentic retrieval pipelines with local LLMs (Ollama) and vector embeddings, facial emotion classifiers, and decentralized web protocols.
+          </p>
+          <p class="about-text">
+            Beyond coding, I co-authored a book chapter on blockchain applications published by <strong>SpringerCham</strong> and led corporate outreach & mentorship as Corporate Head at <strong>The Product House (TPH) SRMIST</strong>.
+          </p>
+
+          <!-- Key Metrics Grid -->
+          <div class="metrics-blueprint-grid">
+            <div class="metric-card">
+              <span class="metric-number">8.9</span>
+              <span class="metric-desc">Undergrad CGPA @ SRMIST</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">94%+</span>
+              <span class="metric-desc">ML Evaluation Precision & Recall</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">8+</span>
+              <span class="metric-desc">Relational DB Tables & Complex Joins</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">1st</span>
+              <span class="metric-desc">SpringerCham Published Book Section</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TECH STACK SECTION ================= -->
+      <section id="stack" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">02</span>
+            <span class="section-title">Technical Arsenal</span>
+          </div>
+          <span class="panel-meta">Specialized Domains</span>
+        </div>
+
+        <div class="panel-body stack-body">
+          
+          <!-- Category 1 -->
+          <div class="stack-category-row">
+            <div class="stack-category-label">
+              <span class="category-index">01</span>
+              <span class="category-name">AI & Machine Learning</span>
+            </div>
+            <div class="stack-pills">
+              <span class="tech-pill highlight">Retrieval-Augmented Generation (RAG)</span>
+              <span class="tech-pill highlight">Vector Databases</span>
+              <span class="tech-pill highlight">Ollama LLMs</span>
+              <span class="tech-pill">Scikit-learn</span>
+              <span class="tech-pill">SMOTE Balancing</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">NumPy</span>
+              <span class="tech-pill">Matplotlib & Seaborn</span>
+              <span class="tech-pill">Streamlit</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="stack-category-row">
+            <div class="stack-category-label">
+              <span class="category-index">02</span>
+              <span class="category-name">Backend & Distributed Systems</span>
+            </div>
+            <div class="stack-pills">
+              <span class="tech-pill highlight">Python (AsyncIO)</span>
+              <span class="tech-pill highlight">FastAPI</span>
+              <span class="tech-pill highlight">WebSockets</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Next.js</span>
+              <span class="tech-pill">RESTful API Architecture</span>
+              <span class="tech-pill">Gateway Health Monitoring</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="stack-category-row">
+            <div class="stack-category-label">
+              <span class="category-index">03</span>
+              <span class="category-name">Databases & Data Modeling</span>
+            </div>
+            <div class="stack-pills">
+              <span class="tech-pill highlight">PostgreSQL</span>
+              <span class="tech-pill highlight">MySQL (Normalized Schemas)</span>
+              <span class="tech-pill">Complex SQL Joins</span>
+              <span class="tech-pill">Vector Embeddings Storage</span>
+              <span class="tech-pill">Data Aggregations</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="stack-category-row">
+            <div class="stack-category-label">
+              <span class="category-index">04</span>
+              <span class="category-name">Languages & Core Tools</span>
+            </div>
+            <div class="stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">C / C++</span>
+              <span class="tech-pill">JavaScript (ES6+)</span>
+              <span class="tech-pill">Dart</span>
+              <span class="tech-pill">Git & GitHub</span>
+              <span class="tech-pill">Google Cloud Platform</span>
+              <span class="tech-pill">PyCharm & IntelliJ</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Diagonal Stripe Divider -->
+      <div class="stripe-divider"></div>
+
+      <!-- ================= PROJECTS SECTION ================= -->
+      <section id="projects" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">03</span>
+            <span class="section-title">Featured Projects (8)</span>
+          </div>
+          <!-- Filter buttons -->
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI / Security</button>
+            <button class="filter-btn" data-filter="backend">Backend & Infra</button>
+            <button class="filter-btn" data-filter="web3">Web3 & Blockchain</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: IntentGuard (FEATURED #1) -->
+          <article class="project-card featured-highlight" data-category="ai">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-01 • FEATURED</span>
+                <span class="project-date">2026</span>
+              </div>
+              <h3 class="project-name">IntentGuard | AI Agent Payment Security & Intent Verification</h3>
+              <p class="project-tagline font-mono">AI agent payment security using cryptographic intent verification, risk scoring & tamper-evident auditing</p>
+            </div>
+            <p class="project-desc">
+              Developed a proactive security layer for autonomous AI agents that verifies user-authorized payment intent before transactions are processed. Implemented Ed25519 cryptographic signatures, a two-tier firewall with rule-based validation and risk scoring, prompt injection detection, lookalike merchant identification, and an emergency kill switch. Integrated a tamper-evident SHA-256 hash-chained audit trail and a mock UPI sandbox to demonstrate secure payment authorization.
+            </p>
+            <ul class="project-highlights-list font-mono">
+              <li>Cryptographic verification of payment limits, expiry, and authorized payees.</li>
+              <li>Risk-based transaction approval, user confirmation, or rejection.</li>
+              <li>Automated demo scenarios for payment approval, injection attacks, and emergency revocation.</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="mini-tag highlight">Python</span>
+              <span class="mini-tag highlight">FastAPI</span>
+              <span class="mini-tag highlight">Ed25519 Signatures</span>
+              <span class="mini-tag">SHA-256 Hash Chain</span>
+              <span class="mini-tag">React</span>
+              <span class="mini-tag">Mock UPI Sandbox</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine/intentguard" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Repository (github.com/gensine/intentguard)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">AI Security / Agentic</span>
+            </div>
+          </article>
+
+          <!-- Project 2: FreelanceX (FEATURED #2) -->
+          <article class="project-card featured-highlight" data-category="web3">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-02 • FEATURED</span>
+                <span class="project-date">2025 – 2026</span>
+              </div>
+              <h3 class="project-name">FreelanceX | Decentralized Freelance Marketplace</h3>
+              <p class="project-tagline font-mono">Decentralized freelance marketplace with USDC smart contract escrow & multisig arbitration</p>
+            </div>
+            <p class="project-desc">
+              Built a decentralized freelance marketplace on Base Sepolia featuring smart contract-based USDC escrow, wallet-based authentication, and multisignature dispute resolution. Developed a React Native Android application integrated with a Node.js backend, PostgreSQL database, and Solidity smart contracts to support a secure and transparent freelance workflow.
+            </p>
+            <ul class="project-highlights-list font-mono">
+              <li>Smart contract escrow for managing freelance payments.</li>
+              <li>2-of-3 multisignature arbitration for dispute resolution.</li>
+              <li>Sign-In with Ethereum (SIWE) for wallet-based authentication.</li>
+              <li>Monorepo architecture with shared types and automated smart contract tests.</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="mini-tag highlight">React Native</span>
+              <span class="mini-tag highlight">TypeScript</span>
+              <span class="mini-tag">Solidity</span>
+              <span class="mini-tag">Foundry</span>
+              <span class="mini-tag">Viem & SIWE</span>
+              <span class="mini-tag">Base Sepolia</span>
+              <span class="mini-tag">Node.js</span>
+              <span class="mini-tag">PostgreSQL / Prisma</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/jaiswalism/FreelanceX" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Repository (github.com/jaiswalism/FreelanceX)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">Web3 / Escrow</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Unified API Gateway & Health Monitor (FEATURED #3) -->
+          <article class="project-card featured-highlight" data-category="backend">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-03 • FEATURED</span>
+                <span class="project-date">2026</span>
+              </div>
+              <h3 class="project-name">Unified API Gateway & Health Monitor | Real-Time Microservice Monitoring</h3>
+              <p class="project-tagline font-mono">Real-time microservice monitoring with automated health checks, WebSockets & latency analytics</p>
+            </div>
+            <p class="project-desc">
+              Developed a full-stack monitoring dashboard to track microservice health, uptime, latency, and service availability in real time. Built a FastAPI backend with scheduled health checks, persistent metric storage, and WebSocket-based updates, alongside a React dashboard for service management and latency visualization.
+            </p>
+            <ul class="project-highlights-list font-mono">
+              <li>Service registry with configurable health endpoints and monitoring intervals.</li>
+              <li>Automated background polling and real-time status updates without page refreshes.</li>
+              <li>Latency analytics and health status tracking for identifying service degradation.</li>
+              <li>Extensible alerting architecture for downtime, latency spikes, and error rates.</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="mini-tag highlight">Python</span>
+              <span class="mini-tag highlight">FastAPI</span>
+              <span class="mini-tag highlight">WebSockets</span>
+              <span class="mini-tag">React / Vite</span>
+              <span class="mini-tag">SQLAlchemy & SQLite</span>
+              <span class="mini-tag">APScheduler</span>
+              <span class="mini-tag">Recharts</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Repository (github.com/gensine)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">Backend / Observability</span>
+            </div>
+          </article>
+
+          <!-- Project 4: ALawyer -->
+          <article class="project-card" data-category="ai">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-04</span>
+                <span class="project-date">Mar 2026 – Jul 2026</span>
+              </div>
+              <h3 class="project-name">ALawyer – Semantic Legal Intelligence</h3>
+              <p class="project-tagline font-mono">Autonomous Legal QA with RAG, Vector Search & Local LLM Inference</p>
+            </div>
+            <p class="project-desc">
+              Engineered a high-precision Retrieval-Augmented Generation (RAG) pipeline querying complex legal documents. Built semantic document embeddings in vector stores and coupled local Ollama LLM inference with a Python backend and responsive React frontend for document question answering.
+            </p>
+            <div class="project-tech-tags">
+              <span class="mini-tag">RAG</span>
+              <span class="mini-tag">Vector DB</span>
+              <span class="mini-tag">Ollama</span>
+              <span class="mini-tag">Python</span>
+              <span class="mini-tag">React</span>
+              <span class="mini-tag">CSS</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">AI / LLM</span>
+            </div>
+          </article>
+
+          <!-- Project 5: Emoti-Sense AI -->
+          <article class="project-card" data-category="ai">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-05</span>
+                <span class="project-date">Mar 2026 – Jul 2026</span>
+              </div>
+              <h3 class="project-name">Emoti-Sense AI – Multilingual Emotion Engine</h3>
+              <p class="project-tagline font-mono">Real-time facial micro-expression analysis & multilingual sentiment pipeline</p>
+            </div>
+            <p class="project-desc">
+              Developed an end-to-end machine learning pipeline for real-time facial emotion detection and speech/text sentiment analysis. Includes automated preprocessing, model evaluation with high accuracy metrics, and synchronous inference.
+            </p>
+            <div class="project-tech-tags">
+              <span class="mini-tag">Python</span>
+              <span class="mini-tag">Machine Learning</span>
+              <span class="mini-tag">Computer Vision</span>
+              <span class="mini-tag">React</span>
+              <span class="mini-tag">Git</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">ML / NLP</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Credit Card Fraud Detection -->
+          <article class="project-card" data-category="ai">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-06</span>
+                <span class="project-date">Nov 2024 – Dec 2024</span>
+              </div>
+              <h3 class="project-name">Credit Card Fraud Detection Engine</h3>
+              <p class="project-tagline font-mono">Anomaly detection on highly skewed transactional financial datasets</p>
+            </div>
+            <p class="project-desc">
+              Tackled heavy class imbalance using Synthetic Minority Over-sampling (SMOTE). Built and rigorously benchmarked Random Forest and Logistic Regression models evaluated on Precision, Recall, F1-Score, and ROC-AUC curve performance.
+            </p>
+            <div class="project-tech-tags">
+              <span class="mini-tag">Python</span>
+              <span class="mini-tag">Scikit-learn</span>
+              <span class="mini-tag">SMOTE</span>
+              <span class="mini-tag">Pandas</span>
+              <span class="mini-tag">NumPy</span>
+              <span class="mini-tag">Matplotlib</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Notebook</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">Anomaly ML</span>
+            </div>
+          </article>
+
+          <!-- Project 7: Elyxir Pharmacy Management System -->
+          <article class="project-card" data-category="backend">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-07</span>
+                <span class="project-date">Jan 2025 – Feb 2025</span>
+              </div>
+              <h3 class="project-name">Elyxir – Relational Pharmacy Platform</h3>
+              <p class="project-tagline font-mono">Enterprise database schema architecture with 8+ normalized tables</p>
+            </div>
+            <p class="project-desc">
+              Designed a normalized MySQL schema modeling multi-tier inventory, suppliers, pharmaceutical batches, and checkout transactions. Wrote optimized SQL queries using multi-table joins, transactions, and window aggregation for real-time inventory tracking.
+            </p>
+            <div class="project-tech-tags">
+              <span class="mini-tag">Next.js</span>
+              <span class="mini-tag">MySQL</span>
+              <span class="mini-tag">Database Normalization</span>
+              <span class="mini-tag">Relational Joins</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Codebase</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">Database / Web</span>
+            </div>
+          </article>
+
+          <!-- Project 8: xBridge -->
+          <article class="project-card" data-category="web3">
+            <div class="project-top">
+              <div class="project-title-row">
+                <span class="project-index">PROJ-08</span>
+                <span class="project-date">Mar 2024 – Jul 2024</span>
+              </div>
+              <h3 class="project-name">xBridge – Single-Tx Cross-Chain Swap</h3>
+              <p class="project-tagline font-mono">Decentralized token bridge leveraging LiFi routing on Sepolia testnet</p>
+            </div>
+            <p class="project-desc">
+              Engineered a decentralized cross-chain bridge executing single-transaction cross-chain token swap and bridge routing via LiFi API. Developed an asynchronous Node.js monitoring daemon and React client with live transaction status telemetry.
+            </p>
+            <div class="project-tech-tags">
+              <span class="mini-tag">Sepolia</span>
+              <span class="mini-tag">LiFi API</span>
+              <span class="mini-tag">React.js</span>
+              <span class="mini-tag">Node.js</span>
+              <span class="mini-tag">Web3.js</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View DApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <span class="project-domain-badge">Web3 / Bridge</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE & LEADERSHIP SECTION ================= -->
+      <section id="experience" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">04</span>
+            <span class="section-title">Experience & Leadership</span>
+          </div>
+          <span class="panel-meta">Career Trajectory</span>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-period">July 2026 – Present</span>
+              <span class="timeline-location font-mono">Chennai, India</span>
+              <span class="timeline-badge type-intern">Engineering Internship</span>
+            </div>
+            <div class="timeline-right">
+              <h3 class="timeline-role">Software Development Intern</h3>
+              <h4 class="timeline-company">Sopra Steria</h4>
+              <ul class="timeline-bullets">
+                <li>Built a <strong>Unified API Gateway Health Monitor</strong> using Python, FastAPI, React, and real-time WebSockets.</li>
+                <li>Implemented automated telemetry pipelines monitoring uptime, latency percentiles, HTTP error codes, and consecutive fail triggers to identify and isolate unhealthy microservices.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="mini-tag">Python</span>
+                <span class="mini-tag">FastAPI</span>
+                <span class="mini-tag">WebSockets</span>
+                <span class="mini-tag">React</span>
+                <span class="mini-tag">Health Telemetry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-period">Jun 2024 – Present</span>
+              <span class="timeline-location font-mono">SRMIST, Chennai</span>
+              <span class="timeline-badge type-lead">Leadership</span>
+            </div>
+            <div class="timeline-right">
+              <h3 class="timeline-role">Corporate Head</h3>
+              <h4 class="timeline-company">The Product House (TPH) SRMIST</h4>
+              <ul class="timeline-bullets">
+                <li>Partnered with prominent Web3 & AI firms and secured corporate sponsorships for major technical hackathons and blockchain conferences.</li>
+                <li>Led corporate relations, branding campaigns, and mentored 30+ junior developers across full-stack and decentralized tech tracks.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="mini-tag">Corporate Relations</span>
+                <span class="mini-tag">Strategic Outreach</span>
+                <span class="mini-tag">Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-period">Mar 2024 – Sep 2024</span>
+              <span class="timeline-location font-mono">SRMIST, Chennai</span>
+              <span class="timeline-badge type-org">Community</span>
+            </div>
+            <div class="timeline-right">
+              <h3 class="timeline-role">Board Member</h3>
+              <h4 class="timeline-company">ACM Women (ACM-W) SRM</h4>
+              <ul class="timeline-bullets">
+                <li>Drove initiatives for the ACM-W SRM chapter advocating diversity, representation, and inclusion in computer science.</li>
+                <li>Organized technical bootcamps, algorithmic problem-solving workshops, and hackathons benefiting 500+ student participants.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="mini-tag">ACM-W</span>
+                <span class="mini-tag">Hackathon Operations</span>
+                <span class="mini-tag">DEI in Tech</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Diagonal Stripe Divider -->
+      <div class="stripe-divider"></div>
+
+      <!-- ================= PUBLICATIONS & AWARDS SECTION ================= -->
+      <section id="publications" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">05</span>
+            <span class="section-title">Research & Accolades</span>
+          </div>
+          <span class="panel-meta">Published Work & Competitions</span>
+        </div>
+
+        <div class="panel-body">
+          
+          <!-- Publication Card -->
+          <div class="highlight-publication-card">
+            <div class="pub-badge font-mono">SpringerCham • Book Chapter • Feb 2026</div>
+            <h3 class="pub-title">Fundamentals of Blockchain Technology and Applications</h3>
+            <p class="pub-subtitle font-mono">In: <em>Blockchain Innovations for a Sustainable Circular Economy</em></p>
+            <p class="pub-author"><strong>Co-Author:</strong> Vaishnavi Mishra • Published by SpringerCham</p>
+            <p class="pub-desc">
+              Authored an authoritative chapter breaking down decentralized cryptographic state machines, consensus protocols, and industrial applications in sustainable circular supply chains. Analyzed data provenance, zero-trust integrity, and transparency paradigms.
+            </p>
+          </div>
+
+          <!-- Awards Grid -->
+          <div class="awards-grid">
+            <div class="award-card">
+              <div class="award-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div class="award-info">
+                <div class="award-badge font-mono">3rd Prize Winner</div>
+                <h4 class="award-name">Genesis Hackathon (TPH × SRMIST)</h4>
+                <p class="award-meta font-mono">Blockchain Domain • Jan 2024</p>
+                <p class="award-desc">Organized by SRMIST & The Product House. Won for developing an innovative decentralized liquidity settlement concept.</p>
+              </div>
+            </div>
+
+            <div class="award-card">
+              <div class="award-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div class="award-info">
+                <div class="award-badge font-mono">Elite Certification</div>
+                <h4 class="award-name">Programming in Java – NPTEL</h4>
+                <p class="award-meta font-mono">Certification • Jul 2024</p>
+                <p class="award-desc">Successfully completed rigorous Ministry of Education NPTEL course covering OOP, multithreading, and JVM internals.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= EDUCATION SECTION ================= -->
+      <section id="education" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">06</span>
+            <span class="section-title">Education</span>
+          </div>
+          <span class="panel-meta">Academic Foundation</span>
+        </div>
+
+        <div class="panel-body education-body">
+          
+          <div class="edu-card">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">B.Tech Computer Science and Engineering</h3>
+                <h4 class="edu-sub">Specialization in Blockchain Technology</h4>
+                <p class="edu-school">SRM Institute of Science and Technology, Chennai, India</p>
+              </div>
+              <div class="edu-meta font-mono">
+                <span class="edu-period">2023 – 2027</span>
+                <span class="edu-score highlight-score">CGPA: 8.9 / 10.0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">CBSE Class 12th (Senior Secondary)</h3>
+                <p class="edu-school">Sacred Heart Higher Secondary School, Sitapur, India</p>
+              </div>
+              <div class="edu-meta font-mono">
+                <span class="edu-period">2022 – 2023</span>
+                <span class="edu-score">Percentage: 78%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">CBSE Class 10th (Secondary School)</h3>
+                <p class="edu-school">Sacred Heart Higher Secondary School, Sitapur, India</p>
+              </div>
+              <div class="edu-meta font-mono">
+                <span class="edu-period">2020 – 2021</span>
+                <span class="edu-score highlight-score">Percentage: 94%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Diagonal Stripe Divider -->
+      <div class="stripe-divider"></div>
+
+      <!-- ================= CONTACT & CALL TO ACTION ================= -->
+      <section id="contact" class="blueprint-panel section-panel screen-line-bottom">
+        <div class="panel-header">
+          <div class="panel-header-badge">
+            <span class="section-num">07</span>
+            <span class="section-title">Initialize Contact</span>
+          </div>
+          <span class="panel-meta">Ready to Build</span>
+        </div>
+
+        <div class="panel-body contact-body">
+          <div class="contact-pitch">
+            <p class="contact-lead">
+              Looking for an <strong>AI Engineer</strong> who understands both generative modeling and rock-solid systems?
+            </p>
+            <p class="contact-sub">
+              Whether you're developing high-throughput LLM pipelines, autonomous agents, or high-reliability backends, my inbox is open.
+            </p>
+          </div>
+
+          <div class="contact-cards-grid">
+            <a href="mailto:vm1985@srmist.edu.in" class="contact-action-card">
+              <div class="contact-icon-tile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-action-info">
+                <span class="contact-action-title">Email Direct</span>
+                <span class="contact-action-detail font-mono">vm1985@srmist.edu.in</span>
+              </div>
+              <span class="action-arrow">→</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vaishnavi-mishra-386935296" target="_blank" rel="noopener noreferrer" class="contact-action-card">
+              <div class="contact-icon-tile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-action-info">
+                <span class="contact-action-title">LinkedIn Message</span>
+                <span class="contact-action-detail font-mono">/in/vaishnavi-mishra</span>
+              </div>
+              <span class="action-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="blueprint-footer">
+        <div class="footer-inner">
+          <div class="footer-left font-mono">
+            <span>© 2026 Vaishnavi Mishra. All rights reserved.</span>
+            <span class="footer-subtext">Engineered with high craft • Blueprint v2.6</span>
+          </div>
+          <div class="footer-right">
+            <a href="#about" class="back-to-top font-mono">
+              <span>Back to Top</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- ================= COMMAND PALETTE DIALOG (⌘K / Ctrl+K) ================= -->
+  <dialog id="cmd-dialog" class="cmd-dialog">
+    <div class="cmd-box">
+      <div class="cmd-input-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cmd-search-icon">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="cmd-input" class="cmd-input font-mono" placeholder="Type a command or jump to section..." autocomplete="off" />
+        <button id="cmd-close-btn" class="cmd-close-btn">ESC</button>
+      </div>
+
+      <div class="cmd-results" id="cmd-results">
+        <div class="cmd-group-label font-mono">NAVIGATION</div>
+        <div class="cmd-item" data-action="goto" data-target="#about">
+          <span class="cmd-item-icon">👤</span>
+          <span class="cmd-item-text">About / Hello</span>
+          <span class="cmd-item-badge">#01</span>
+        </div>
+        <div class="cmd-item" data-action="goto" data-target="#stack">
+          <span class="cmd-item-icon">⚡</span>
+          <span class="cmd-item-text">Technical Stack</span>
+          <span class="cmd-item-badge">#02</span>
+        </div>
+        <div class="cmd-item" data-action="goto" data-target="#projects">
+          <span class="cmd-item-icon">🚀</span>
+          <span class="cmd-item-text">Featured Projects</span>
+          <span class="cmd-item-badge">#03</span>
+        </div>
+        <div class="cmd-item" data-action="goto" data-target="#experience">
+          <span class="cmd-item-icon">💼</span>
+          <span class="cmd-item-text">Experience & Sopra Steria</span>
+          <span class="cmd-item-badge">#04</span>
+        </div>
+        <div class="cmd-item" data-action="goto" data-target="#publications">
+          <span class="cmd-item-icon">📚</span>
+          <span class="cmd-item-text">SpringerCham Publication & Awards</span>
+          <span class="cmd-item-badge">#05</span>
+        </div>
+        <div class="cmd-item" data-action="goto" data-target="#education">
+          <span class="cmd-item-icon">🎓</span>
+          <span class="cmd-item-text">Education & SRMIST</span>
+          <span class="cmd-item-badge">#06</span>
+        </div>
+        <div class="cmd-item" data-action="goto" data-target="#contact">
+          <span class="cmd-item-icon">✉️</span>
+          <span class="cmd-item-text">Initialize Contact</span>
+          <span class="cmd-item-badge">#07</span>
+        </div>
+
+        <div class="cmd-group-label font-mono">QUICK ACTIONS</div>
+        <div class="cmd-item" data-action="copy-email">
+          <span class="cmd-item-icon">📋</span>
+          <span class="cmd-item-text">Copy Email Address (vm1985@srmist.edu.in)</span>
+        </div>
+        <div class="cmd-item" data-action="copy-phone">
+          <span class="cmd-item-icon">📞</span>
+          <span class="cmd-item-text">Copy Phone (+91 6386061984)</span>
+        </div>
+        <div class="cmd-item" data-action="toggle-theme">
+          <span class="cmd-item-icon">🌓</span>
+          <span class="cmd-item-text">Toggle Theme (Light / Dark)</span>
+        </div>
+        <div class="cmd-item" data-action="open-github">
+          <span class="cmd-item-icon">🐙</span>
+          <span class="cmd-item-text">Open GitHub Profile (@gensine)</span>
+        </div>
+        <div class="cmd-item" data-action="open-linkedin">
+          <span class="cmd-item-icon">🔗</span>
+          <span class="cmd-item-text">Open LinkedIn Profile</span>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast font-mono" role="alert">Copied to clipboard!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
