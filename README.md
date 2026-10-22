@@ -11,7 +11,7 @@ A minimalist, high-craft developer portfolio inspired by [chanhdai.com](https://
   1. **IntentGuard** — AI agent payment security with Ed25519 signatures, prompt injection detection, SHA-256 hash-chain, and mock UPI sandbox.
   2. **FreelanceX** — Decentralized freelance marketplace on Base Sepolia with smart contract USDC escrow and 2-of-3 multisig arbitration.
   3. **Unified API Gateway & Health Monitor** — Real-time microservice health, latency analytics, and WebSockets telemetry.
-  4. **ALawyer** — Autonomous legal AI using RAG, vector databases, and local Ollama inference.
+  4. **MerchantAI Catalog Agent** — AI-native catalog ingestion and autonomous commerce agent with ACP/AP2 protocol APIs, money guardrails, and Razorpay test checkout.
   5. **Emoti-Sense AI** — Real-time facial emotion recognition and multilingual sentiment engine.
   6. **Credit Card Fraud Detection** — Imbalanced financial anomaly classification using SMOTE and Random Forest.
   7. **Elyxir** — Relational pharmacy management ERP with 8+ normalized MySQL tables.

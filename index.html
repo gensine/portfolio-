@@ -126,15 +126,8 @@
                 <span class="canvas-tag">NEURAL TENSOR ENGINE</span>
                 <span class="canvas-metric" id="neural-metric">LOSS: 0.0142 | ACC: 98.7%</span>
               </div>
+              <!-- Fig caption -->
               <figcaption class="fig-caption">Fig. 1. Latent Tensor Visualizer</figcaption>
-              
-              <!-- Handwritten Note -->
-              <div class="handwritten-note note-canvas">
-                <svg class="handwritten-arrow" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M42 6C35 24 22 38 8 42M8 42L18 36M8 42L14 48"/>
-                </svg>
-                <span>follows your cursor<br>click for synaptic pulse</span>
-              </div>
             </div>
           </div>
 
@@ -185,6 +178,18 @@
               <a href="https://www.linkedin.com/in/vaishnavi-mishra-386935296" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.274 0H1.728C.692 0 0 .685 0 1.715v20.569C0 23.316.864 24 1.727 24h20.546C23.31 24 24 23.315 24 22.285V1.716C24.001.684 23.31 0 22.274 0M7.08 20.4H3.454V8.915h3.625zM5.352 7.371c-1.209 0-2.07-.856-2.07-2.056s.863-2.059 2.07-2.059c1.21 0 2.073.859 2.073 2.059S6.388 7.37 5.352 7.37M20.548 20.4h-3.626v-5.485c0-1.371 0-3.087-1.9-3.087-1.898 0-2.073 1.372-2.073 2.916V20.4H9.325V8.915h3.454v1.541c.69-1.2 2.073-1.885 3.453-1.885 3.627 0 4.316 2.4 4.316 5.485z"/></svg>
                 <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="social-btn" id="resume-btn" title="View / Download Resume">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Resume</span>
               </a>
             </li>
             <li>
@@ -550,33 +555,42 @@
             </div>
           </article>
 
-          <!-- Project 4: ALawyer -->
+          <!-- Project 4: MerchantAI Catalog Agent -->
           <article class="project-card" data-category="ai">
             <div class="project-top">
               <div class="project-title-row">
                 <span class="project-index">PROJ-04</span>
-                <span class="project-date">Mar 2026 – Jul 2026</span>
+                <span class="project-date">2026</span>
               </div>
-              <h3 class="project-name">ALawyer – Semantic Legal Intelligence</h3>
-              <p class="project-tagline font-mono">Autonomous Legal QA with RAG, Vector Search & Local LLM Inference</p>
+              <h3 class="project-name">MerchantAI Catalog Agent | Autonomous Agentic Commerce</h3>
+              <p class="project-tagline font-mono">AI-native catalog ingestion layer & autonomous purchasing loop with Razorpay test checkout</p>
             </div>
             <p class="project-desc">
-              Engineered a high-precision Retrieval-Augmented Generation (RAG) pipeline querying complex legal documents. Built semantic document embeddings in vector stores and coupled local Ollama LLM inference with a Python backend and responsive React frontend for document question answering.
+              Engineered an AI-native infrastructure layer for Razorpay AI Buildathon 2026 that ingests messy merchant catalogs (CSV, PDF, web scraping) into standardized vector embeddings in under 10ms. Exposes ACP/AP2 protocol-aligned APIs and an autonomous AI buyer agent with tool calling, multi-layer money-action guardrails, and Razorpay test-mode payment execution with immutable audit logging.
             </p>
+            <ul class="project-highlights-list font-mono">
+              <li>Multi-format ingestion pipeline (CSV, PDF, web scraping) with automated schema normalization.</li>
+              <li>ACP/AP2 protocol-aligned REST API returning machine-readable schemas for AI buyers.</li>
+              <li>Autonomous AI Buyer loop with tool calling for semantic catalog search and stock verification.</li>
+              <li>Money-action guardrails: spend limit caps, inventory stock gates, idempotency, and price integrity.</li>
+              <li>End-to-end Razorpay test checkout simulator paired with an append-only JSON audit trail.</li>
+            </ul>
             <div class="project-tech-tags">
-              <span class="mini-tag">RAG</span>
-              <span class="mini-tag">Vector DB</span>
-              <span class="mini-tag">Ollama</span>
-              <span class="mini-tag">Python</span>
-              <span class="mini-tag">React</span>
-              <span class="mini-tag">CSS</span>
+              <span class="mini-tag highlight">Python 3.13</span>
+              <span class="mini-tag highlight">FastAPI</span>
+              <span class="mini-tag highlight">AI Agents</span>
+              <span class="mini-tag highlight">Razorpay SDK</span>
+              <span class="mini-tag">Vector Store / RAG</span>
+              <span class="mini-tag">ACP / AP2 Protocol</span>
+              <span class="mini-tag">Pydantic</span>
+              <span class="mini-tag">Pytest</span>
             </div>
             <div class="project-footer">
-              <a href="https://github.com/gensine" target="_blank" rel="noopener noreferrer" class="project-link">
-                <span>View Repository</span>
+              <a href="https://github.com/gensine/MerchantAI-Catalog-Agent" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View Repository (github.com/gensine/MerchantAI-Catalog-Agent)</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </a>
-              <span class="project-domain-badge">AI / LLM</span>
+              <span class="project-domain-badge">Agentic AI / Commerce</span>
             </div>
           </article>
 

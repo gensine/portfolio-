@@ -343,7 +343,7 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 230px 1fr;
   grid-template-rows: auto auto;
 }
 
@@ -355,13 +355,14 @@ body {
 
 /* Avatar Column */
 .hero-avatar-col {
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-subtle);
+  overflow: hidden;
 }
 
 @media (max-width: 680px) {
@@ -415,9 +416,11 @@ body {
 
 .avatar-meta {
   margin-top: 1rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.45rem;
+  max-width: 100%;
 }
 
 .status-pulse-dot {
@@ -427,6 +430,7 @@ body {
   background-color: var(--color-success);
   box-shadow: 0 0 8px var(--color-success);
   animation: pulse-dot 2s infinite ease-in-out;
+  flex-shrink: 0;
 }
 
 @keyframes pulse-dot {
@@ -445,6 +449,7 @@ body {
   font-size: 0.6875rem;
   color: var(--fg-muted);
   white-space: nowrap;
+  letter-spacing: -0.015em;
 }
 
 /* Canvas / Tensor Visualization Column (Fig. 1) */
