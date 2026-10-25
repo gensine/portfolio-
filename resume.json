@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Vaishnavi Mishra",
+    "label": "AI Engineer & Systems Developer",
+    "email": "vm1985@srmist.edu.in",
+    "phone": "+916386061984",
+    "url": "https://gensine.github.io/portfolio-/",
+    "summary": "AI Engineer specializing in autonomous agent payment security, RAG architectures, LLM inference, and resilient microservice backends.",
+    "location": {
+      "city": "Chennai",
+      "region": "Tamil Nadu",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "gensine",
+        "url": "https://github.com/gensine"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "vaishnavi-mishra-386935296",
+        "url": "https://www.linkedin.com/in/vaishnavi-mishra-386935296"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Sopra Steria",
+      "position": "Software Development Intern",
+      "startDate": "2026-07-01",
+      "summary": "Built Unified API Gateway Health Monitor using Python, FastAPI, React, and WebSockets.",
+      "highlights": [
+        "Automated monitoring for uptime, latency, HTTP errors, and consecutive service failures.",
+        "Engineered real-time telemetry dashboards using WebSockets."
+      ]
+    },
+    {
+      "name": "The Product House SRMIST",
+      "position": "Corporate Head",
+      "startDate": "2024-06-01",
+      "summary": "Managed corporate outreach, Web3 partnerships, and mentorship for 30+ developers."
+    },
+    {
+      "name": "ACM Women SRM",
+      "position": "Board Member",
+      "startDate": "2024-03-01",
+      "endDate": "2024-09-30",
+      "summary": "Organized hackathons and technical bootcamps advocating diversity in computing."
+    }
+  ],
+  "education": [
+    {
+      "institution": "SRM Institute of Science and Technology",
+      "area": "Computer Science and Engineering - Blockchain Technology",
+      "studyType": "B.Tech",
+      "startDate": "2023-08-01",
+      "endDate": "2027-05-31",
+      "score": "CGPA: 8.9 / 10.0"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Fundamentals of Blockchain Technology and Applications",
+      "publisher": "SpringerCham",
+      "releaseDate": "2026-02-01",
+      "summary": "Book section in Blockchain Innovations for a Sustainable Circular Economy covering cryptographic state machines and decentralized industrial applications."
+    }
+  ],
+  "skills": [
+    {
+      "name": "AI & Machine Learning",
+      "keywords": ["RAG", "Vector Databases", "Ollama", "Scikit-learn", "SMOTE", "Pandas", "NumPy"]
+    },
+    {
+      "name": "Backend & Distributed Systems",
+      "keywords": ["Python", "FastAPI", "WebSockets", "Node.js", "Next.js", "REST APIs"]
+    },
+    {
+      "name": "Blockchain & Security",
+      "keywords": ["Solidity", "Ed25519", "SHA-256", "Circom", "Groth16", "Foundry", "Base Sepolia"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "IntentGuard",
+      "description": "AI agent payment security using cryptographic intent verification, risk scoring, and tamper-evident auditing.",
+      "url": "https://github.com/gensine/intentguard"
+    },
+    {
+      "name": "MerchantAI Catalog Agent",
+      "description": "Autonomous agentic commerce catalog normalizer and purchasing loop with ACP/AP2 protocol APIs.",
+      "url": "https://github.com/gensine/MerchantAI-Catalog-Agent"
+    },
+    {
+      "name": "FreelanceX",
+      "description": "Decentralized freelance marketplace with USDC smart contract escrow and multisig arbitration.",
+      "url": "https://github.com/jaiswalism/FreelanceX"
+    },
+    {
+      "name": "Unified API Gateway & Health Monitor",
+      "description": "Real-time microservice monitoring with automated health checks, WebSockets, and latency analytics.",
+      "url": "https://github.com/gensine"
+    }
+  ]
+}

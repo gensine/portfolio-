@@ -1,0 +1,98 @@
+# Vaishnavi Mishra — AI Engineer & Systems Developer
+> Building intelligent RAG pipelines, autonomous agent security, and resilient distributed backends.
+
+## Overview
+- **Name:** Vaishnavi Mishra
+- **Role:** AI Engineer / Software Development Intern @ Sopra Steria
+- **Education:** B.Tech Computer Science & Engineering (Blockchain Technology), SRM Institute of Science & Technology, Chennai (CGPA: 8.9 / 10.0, 2023–2027)
+- **Location:** Chennai / Sitapur, India
+- **Email:** vm1985@srmist.edu.in
+- **Phone:** +91 6386061984
+- **GitHub:** https://github.com/gensine
+- **LinkedIn:** https://www.linkedin.com/in/vaishnavi-mishra-386935296
+- **Portfolio:** https://gensine.github.io/portfolio-/
+
+## Core Technical Arsenal
+- **AI & Machine Learning:** Retrieval-Augmented Generation (RAG), Vector Databases, Ollama, LangChain, Scikit-learn, SMOTE Imbalance Handling, Pandas, NumPy, Matplotlib, Seaborn, Streamlit.
+- **Backend & Distributed Systems:** Python (AsyncIO), FastAPI, WebSockets, Node.js, Next.js, RESTful Architecture, API Gateway Health Telemetry.
+- **Agent Protocols & Security:** Agent Communication Protocols (ACP / AP2), Ed25519 Cryptographic Signatures, SHA-256 Hash Chains, Prompt Injection Guardrails, Spend Limit Gating.
+- **Databases & Storage:** PostgreSQL, MySQL (Normalized Relational Schemas, Joins, Aggregations), SQLite, IPFS.
+- **Blockchain & Web3:** Solidity, Foundry, Viem, SIWE, Base Sepolia, Circom & SnarkJS, Groth16, LiFi API.
+- **Languages:** Python, SQL, C/C++, JavaScript (ES6+), TypeScript, Dart.
+
+## Featured Projects
+
+### 1. IntentGuard — AI Agent Payment Security & Intent Verification
+- **Description:** A proactive security layer for autonomous AI agents that verifies user-authorized payment intent before transactions are processed.
+- **Stack:** Python, FastAPI, Ed25519, SHA-256, React, Mock UPI Sandbox
+- **Key Capabilities:**
+  - Cryptographic verification of payment limits, expiry, and authorized payees using Ed25519 signatures.
+  - Two-tier firewall with rule-based validation, prompt injection detection, and lookalike merchant identification.
+  - Tamper-evident SHA-256 hash-chained audit trail.
+  - Mock UPI sandbox demonstrating real-time transaction approval, injection blocking, and emergency revocation.
+- **Repository:** https://github.com/gensine/intentguard
+
+### 2. FreelanceX — Decentralized Freelance Marketplace
+- **Description:** A decentralized freelance marketplace on Base Sepolia featuring smart contract-based USDC escrow, wallet authentication, and multisignature dispute resolution.
+- **Stack:** React Native, TypeScript, Node.js, Express.js, PostgreSQL, Prisma, Solidity, Foundry, Viem, SIWE, Base Sepolia
+- **Key Capabilities:**
+  - Smart contract escrow managing freelance milestone payouts.
+  - 2-of-3 multisignature arbitration for transparent dispute resolution.
+  - Sign-In with Ethereum (SIWE) for decentralized wallet authentication.
+  - Monorepo architecture with automated Foundry smart contract tests.
+- **Repository:** https://github.com/jaiswalism/FreelanceX
+
+### 3. Unified API Gateway & Health Monitor — Real-Time Microservice Monitoring
+- **Description:** Full-stack monitoring dashboard to track microservice health, uptime, latency percentiles, and service availability in real time.
+- **Stack:** Python, FastAPI, React, Vite, SQLAlchemy, SQLite, APScheduler, WebSockets, Axios, Recharts
+- **Key Capabilities:**
+  - Service registry with configurable health endpoints and monitoring intervals.
+  - Automated background polling and WebSocket-based push updates without page reloads.
+  - Latency analytics and degradation identification with an extensible alerting pipeline.
+- **Repository:** https://github.com/gensine
+
+### 4. MerchantAI Catalog Agent — Autonomous Agentic Commerce
+- **Description:** AI-native infrastructure layer built for Razorpay AI Buildathon 2026 that normalizes merchant catalogs into vector embeddings under 10ms with ACP/AP2 protocol APIs.
+- **Stack:** Python 3.13, FastAPI, AI Agents, Razorpay SDK, Vector Store / RAG, ACP/AP2 Protocols, Pydantic, Pytest
+- **Key Capabilities:**
+  - Multi-format catalog ingestion (CSV, PDF, web scraping) into vector embeddings.
+  - ACP/AP2 protocol-aligned endpoints for machine-readable discovery by AI buyers.
+  - Autonomous AI Buyer loop with tool calling for semantic product search and stock gating.
+  - Strict money-action guardrails: spend limit caps, price integrity, idempotency, and Razorpay test checkout.
+- **Repository:** https://github.com/gensine/MerchantAI-Catalog-Agent
+
+### 5. Emoti-Sense AI — Multilingual Emotion Engine
+- **Description:** End-to-end ML pipeline for real-time facial micro-expression analysis and speech/text sentiment classification.
+- **Stack:** Python, Scikit-learn, Computer Vision, React, Git
+
+### 6. Credit Card Fraud Detection Engine
+- **Description:** Financial anomaly classification on highly skewed transactional datasets using SMOTE and Random Forest with precision, recall, and ROC-AUC benchmarking.
+- **Stack:** Python, Scikit-learn, SMOTE, Pandas, NumPy, Matplotlib
+
+### 7. Elyxir — Relational Pharmacy Management Platform
+- **Description:** Normalized MySQL database architecture with 8+ relational tables modeling inventory, suppliers, batches, and transactions.
+- **Stack:** Next.js, MySQL, Relational Joins, Window Functions
+
+### 8. xBridge — Single-Transaction Cross-Chain Swap
+- **Description:** Cross-chain liquidity bridge executing token swap and bridge routing via LiFi API on Sepolia testnet.
+- **Stack:** Sepolia, LiFi API, React.js, Node.js, Web3.js
+
+## Publications & Research
+- **Book Chapter:** *Fundamentals of Blockchain Technology and Applications*
+  - **Book Title:** *Blockchain Innovations for a Sustainable Circular Economy*
+  - **Publisher:** SpringerCham (February 2026)
+  - **Author:** Vaishnavi Mishra (Co-Author)
+  - **Focus:** Cryptographic state machines, consensus mechanisms, and industrial circular economy applications.
+
+## Professional Experience
+- **Software Development Intern — Sopra Steria** (July 2026 – Present | Chennai, India)
+  - Built a Unified API Gateway Health Monitor using Python, FastAPI, React, and WebSockets.
+  - Automated telemetry tracking uptime, latency percentiles, and consecutive failure isolation.
+- **Corporate Head — The Product House (TPH) SRMIST** (June 2024 – Present)
+  - Secured corporate sponsorships from Web3/AI firms and mentored 30+ junior developers.
+- **Board Member — ACM Women (ACM-W) SRM** (March 2024 – September 2024)
+  - Organized technical bootcamps and hackathons for 500+ participants advancing DEI in tech.
+
+## Awards
+- **3rd Prize Winner** — Genesis Hackathon (TPH × SRMIST), Blockchain Domain (Jan 2024)
+- **Elite Certification** — Programming in Java, NPTEL (Jul 2024)

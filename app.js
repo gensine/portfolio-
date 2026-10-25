@@ -448,6 +448,15 @@
           if (el) el.scrollIntoView({ behavior: 'smooth' });
         }
         break;
+      case 'copy-curl':
+        copyToClipboard('curl -s https://gensine.github.io/portfolio-/llms.txt', 'Copied: curl -s .../llms.txt');
+        break;
+      case 'open-llms':
+        window.open('llms.txt', '_blank');
+        break;
+      case 'open-json':
+        window.open('resume.json', '_blank');
+        break;
       case 'copy-email':
         copyToClipboard('vm1985@srmist.edu.in', 'Email copied to clipboard!');
         break;
@@ -565,6 +574,36 @@
       }
     }
     githubCalendar.appendChild(fragment);
+  }
+
+  // ==========================================
+  // 11. INTERACTIVE ARCHITECTURE SCHEMATICS
+  // ==========================================
+  const archToggleBtns = document.querySelectorAll('.arch-toggle-btn');
+  archToggleBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const drawer = document.getElementById(targetId);
+      if (!drawer) return;
+
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !isExpanded);
+      drawer.hidden = isExpanded;
+
+      playSynapticChime(!isExpanded ? 640 : 480);
+    });
+  });
+
+  // ==========================================
+  // 12. CLI CURL BADGE COPY
+  // ==========================================
+  const curlBadgeBtn = document.getElementById('curl-badge-btn');
+  if (curlBadgeBtn) {
+    curlBadgeBtn.addEventListener('click', () => {
+      const cmd = curlBadgeBtn.getAttribute('data-curl') || 'curl -s https://gensine.github.io/portfolio-/llms.txt';
+      copyToClipboard(cmd, 'CLI Command copied! Paste in terminal');
+      playSynapticChime(600);
+    });
   }
 
 })();

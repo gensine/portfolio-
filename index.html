@@ -199,6 +199,12 @@
               </button>
             </li>
             <li>
+              <button id="curl-badge-btn" class="social-btn curl-btn font-mono" title="Copy CLI curl command for LLM crawlers & agents" data-curl="curl -s https://gensine.github.io/portfolio-/llms.txt">
+                <span class="curl-terminal-icon">$_</span>
+                <span>curl llms.txt</span>
+              </button>
+            </li>
+            <li>
               <a href="tel:+916386061984" class="social-btn" title="Call directly">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 <span>+91 6386061984</span>
@@ -463,6 +469,53 @@
               <li>Risk-based transaction approval, user confirmation, or rejection.</li>
               <li>Automated demo scenarios for payment approval, injection attacks, and emergency revocation.</li>
             </ul>
+
+            <!-- Interactive Architecture Toggle -->
+            <button class="arch-toggle-btn font-mono" data-target="arch-intentguard" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arch-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <span>System Architecture Schematic</span>
+              <span class="arch-badge">BLUEPRINT FLOW</span>
+            </button>
+            <div id="arch-intentguard" class="arch-schematic-drawer" hidden>
+              <div class="blueprint-schematic">
+                <div class="schematic-header font-mono">
+                  <span class="schematic-tag">ARCHITECTURE // INTENTGUARD AGENT SECURITY PIPELINE</span>
+                  <span class="schematic-status">VERIFIED SECURE</span>
+                </div>
+                <div class="schematic-flow">
+                  <div class="schematic-node">
+                    <span class="node-step">01</span>
+                    <span class="node-title">Agent Intent Envelope</span>
+                    <span class="node-desc">Payee, Max Cap, Nonce & Expiry</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-highlight">
+                    <span class="node-step">02</span>
+                    <span class="node-title">Ed25519 Verifier</span>
+                    <span class="node-desc">Cryptographic Key & Signature Auth</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-alert">
+                    <span class="node-step">03</span>
+                    <span class="node-title">Two-Tier Guardrail Firewall</span>
+                    <span class="node-desc">Prompt Injection Filter + Risk Engine</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node">
+                    <span class="node-step">04</span>
+                    <span class="node-title">Mock UPI Sandbox</span>
+                    <span class="node-desc">Simulated Payment Authorization Gate</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-success">
+                    <span class="node-step">05</span>
+                    <span class="node-title">SHA-256 Hash Chain</span>
+                    <span class="node-desc">Append-Only Immutable Audit Trail</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="project-tech-tags">
               <span class="mini-tag highlight">Python</span>
               <span class="mini-tag highlight">FastAPI</span>
@@ -499,6 +552,53 @@
               <li>Sign-In with Ethereum (SIWE) for wallet-based authentication.</li>
               <li>Monorepo architecture with shared types and automated smart contract tests.</li>
             </ul>
+
+            <!-- Interactive Architecture Toggle -->
+            <button class="arch-toggle-btn font-mono" data-target="arch-freelancex" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arch-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <span>System Architecture Schematic</span>
+              <span class="arch-badge">BLUEPRINT FLOW</span>
+            </button>
+            <div id="arch-freelancex" class="arch-schematic-drawer" hidden>
+              <div class="blueprint-schematic">
+                <div class="schematic-header font-mono">
+                  <span class="schematic-tag">ARCHITECTURE // FREELANCEX ESCROW & ARBITRATION</span>
+                  <span class="schematic-status">SMART CONTRACT ON BASE SEPOLIA</span>
+                </div>
+                <div class="schematic-flow">
+                  <div class="schematic-node">
+                    <span class="node-step">01</span>
+                    <span class="node-title">SIWE Auth</span>
+                    <span class="node-desc">Sign-In with Ethereum Session</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node">
+                    <span class="node-step">02</span>
+                    <span class="node-title">React Native Android</span>
+                    <span class="node-desc">Milestone Management & Client UI</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node">
+                    <span class="node-step">03</span>
+                    <span class="node-title">Node & Prisma API</span>
+                    <span class="node-desc">PostgreSQL Metadata & State Engine</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-highlight">
+                    <span class="node-step">04</span>
+                    <span class="node-title">Base Sepolia Escrow</span>
+                    <span class="node-desc">Solidity USDC Lock & Automated Milestones</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-success">
+                    <span class="node-step">05</span>
+                    <span class="node-title">2-of-3 Multisig Vault</span>
+                    <span class="node-desc">On-Chain Arbiter Dispute Resolution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="project-tech-tags">
               <span class="mini-tag highlight">React Native</span>
               <span class="mini-tag highlight">TypeScript</span>
@@ -575,6 +675,52 @@
               <li>Money-action guardrails: spend limit caps, inventory stock gates, idempotency, and price integrity.</li>
               <li>End-to-end Razorpay test checkout simulator paired with an append-only JSON audit trail.</li>
             </ul>
+
+            <!-- Interactive Architecture Toggle -->
+            <button class="arch-toggle-btn font-mono" data-target="arch-merchantai" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arch-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <span>System Architecture Schematic</span>
+              <span class="arch-badge">BLUEPRINT FLOW</span>
+            </button>
+            <div id="arch-merchantai" class="arch-schematic-drawer" hidden>
+              <div class="blueprint-schematic">
+                <div class="schematic-header font-mono">
+                  <span class="schematic-tag">ARCHITECTURE // MERCHANTAI AGENTIC COMMERCE PIPELINE</span>
+                  <span class="schematic-status">ACP/AP2 PROTOCOL</span>
+                </div>
+                <div class="schematic-flow">
+                  <div class="schematic-node">
+                    <span class="node-step">01</span>
+                    <span class="node-title">Multi-Format Ingestion</span>
+                    <span class="node-desc">CSV, PDF & Scraped Merchant Catalogs</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-highlight">
+                    <span class="node-step">02</span>
+                    <span class="node-title">&lt;10ms Schema Normalizer</span>
+                    <span class="node-desc">Pydantic Validation & Vector Embeddings</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node">
+                    <span class="node-step">03</span>
+                    <span class="node-title">ACP / AP2 APIs</span>
+                    <span class="node-desc">Machine-Readable Discovery for AI Buyers</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-alert">
+                    <span class="node-step">04</span>
+                    <span class="node-title">Autonomous AI Buyer</span>
+                    <span class="node-desc">Tool Calling, Semantic Search & Stock Gating</span>
+                  </div>
+                  <div class="schematic-arrow font-mono">→</div>
+                  <div class="schematic-node node-success">
+                    <span class="node-step">05</span>
+                    <span class="node-title">Razorpay Test Checkout</span>
+                    <span class="node-desc">Money Guardrails & Append-Only Log</span>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="project-tech-tags">
               <span class="mini-tag highlight">Python 3.13</span>
               <span class="mini-tag highlight">FastAPI</span>
@@ -961,7 +1107,13 @@
         <div class="footer-inner">
           <div class="footer-left font-mono">
             <span>© 2026 Vaishnavi Mishra. All rights reserved.</span>
-            <span class="footer-subtext">Engineered with high craft • Blueprint v2.6</span>
+            <div class="footer-endpoints-row">
+              <span class="footer-subtext">Engineered with high craft • Blueprint v2.6</span>
+              <span class="footer-dot">•</span>
+              <a href="llms.txt" target="_blank" class="footer-endpoint-link">/llms.txt</a>
+              <span class="footer-dot">•</span>
+              <a href="resume.json" target="_blank" class="footer-endpoint-link">/resume.json</a>
+            </div>
           </div>
           <div class="footer-right">
             <a href="#about" class="back-to-top font-mono">
@@ -1023,6 +1175,23 @@
           <span class="cmd-item-icon">✉️</span>
           <span class="cmd-item-text">Initialize Contact</span>
           <span class="cmd-item-badge">#07</span>
+        </div>
+
+        <div class="cmd-group-label font-mono">DEVELOPER & AI ENDPOINTS</div>
+        <div class="cmd-item" data-action="copy-curl">
+          <span class="cmd-item-icon">💻</span>
+          <span class="cmd-item-text">Copy terminal command: curl -s .../llms.txt</span>
+          <span class="cmd-item-badge">CLI</span>
+        </div>
+        <div class="cmd-item" data-action="open-llms">
+          <span class="cmd-item-icon">📄</span>
+          <span class="cmd-item-text">View /llms.txt (LLM Standard Spec)</span>
+          <span class="cmd-item-badge">AI</span>
+        </div>
+        <div class="cmd-item" data-action="open-json">
+          <span class="cmd-item-icon">⚡</span>
+          <span class="cmd-item-text">View /resume.json (JSON Resume API)</span>
+          <span class="cmd-item-badge">JSON</span>
         </div>
 
         <div class="cmd-group-label font-mono">QUICK ACTIONS</div>
